@@ -2,7 +2,7 @@
 
 namespace RandomDataGenerator
 {
-
+	//enum of last names
 	public enum LastName
 	{
 		Key,

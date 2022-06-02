@@ -11,7 +11,7 @@ Random randy = new Random();
 Console.WriteLine("====================== Random Data Generator ======================");
 
 
-
+//displays decision menu and send user to method of choice
 do
 {
     
@@ -36,6 +36,7 @@ static void DisplayMenu()
     Console.WriteLine("0.           Exit Program");
 }
 
+//switch for methods. people added to allow changes to arraylist
 static void MenuChoice(int option, ArrayList people)
 {
     switch (option)
@@ -71,12 +72,14 @@ static void MenuChoice(int option, ArrayList people)
     }
 }
 
+//creates random person
 static void CreatePerson(ArrayList people)
 {
     RandomDataGenerator.Person p = new RandomDataGenerator.Person();
     people.Add(p);
 }
 
+//displays all people generated
 static void DisplayPerson(ArrayList people)
 {
     foreach(RandomDataGenerator.Person p in people)
@@ -85,11 +88,12 @@ static void DisplayPerson(ArrayList people)
     }
 }
 
+//removes person by index
 static void RemovePerson(ArrayList people)
 {
     for(int i = 0; i < people.Count; i++)
     {
-        Console.WriteLine(people[i]);
+        Console.WriteLine(people);
     }
 
     Console.WriteLine("Which index would you like to remove?");
@@ -101,18 +105,21 @@ static void RemovePerson(ArrayList people)
 
 }
 
+// attempt to generate last name
 static void RandomLastName()
 {
     RandomDataGenerator.LastName l = new RandomDataGenerator.LastName();
     
 }
 
+//attempt to generate random ssn
 static void RandomSnn()
 {
    RandomDataGenerator.SSN l = new RandomDataGenerator.SSN();
     Console.WriteLine(l);
 }
 
+//attempt to generate random phonenumber
 static void RandomPhone()
 {
     char choice = '-';

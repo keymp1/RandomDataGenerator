@@ -4,6 +4,7 @@ namespace RandomDataGenerator
 {
 	public class Dependent : Person
 	{
+		//Dependent class that inherits from person
 		public Dependent() : base()
 		{
 			Random randy = new Random();

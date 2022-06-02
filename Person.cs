@@ -21,7 +21,7 @@ namespace RandomDataGenerator
 
 		public Phone Phone { get; init; }
 
-
+		//person constructor
 		public Person()
 		{
 			FirstName = _arrayOfFirstNames[randy.Next(_arrayOfFirstNames.Length)];
@@ -37,7 +37,7 @@ namespace RandomDataGenerator
 			List<Dependent>[] _dependents = new List<Dependent>[10];
 
 		}
-
+		// age method to show age as int
 		public int Age ()
         {
 			 TimeSpan age = DateTime.Today - Birthday;
@@ -48,12 +48,12 @@ namespace RandomDataGenerator
 			return age.Days/365;
         }
 
-
+		// method to add dependent to _dependents list
 		public void AddDependent()
 		{
 			_dependents.Add(new Dependent());
 		}
-
+		//formatted toString method
 		public override String ToString()
         {
 			return			 (FirstName + "\n" +
