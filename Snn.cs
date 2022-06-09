@@ -17,7 +17,7 @@ namespace RandomDataGenerator
 
 		}
 
-		public String ToString()
+		public override string ToString()
 		{
 			//sets first 3 digits to 6, then generates random digits for remaining digits
 			var randomNumbers = new int[9] {6,6,6,0,0,0,0,0,0};
@@ -44,4 +44,5 @@ namespace RandomDataGenerator
 			return socSecNum;
 		}
 	}
+
 }

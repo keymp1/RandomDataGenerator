@@ -56,14 +56,14 @@ namespace RandomDataGenerator
 		//formatted toString method
 		public override String ToString()
         {
-			return			 (FirstName + "\n" +
+			return (FirstName + "\n" +
 							  LastName + "\n" +
-							  Birthday + "\n" +
+							  Birthday.ToShortDateString() + "\n" +
 							  Age() + "\n" +
 							  SSN + "\n" +
 							  Phone + "\n" +
-							  "Dependents:" + _dependents
-							  );
+							  "Dependents:" + _dependents.Count + "\n"
+							  ) ;
         }
 
 

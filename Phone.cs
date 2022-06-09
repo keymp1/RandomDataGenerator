@@ -11,10 +11,10 @@ namespace RandomDataGenerator
 		public String Number { get; init; }
 		public Phone()
 		{
-			Number = ToString();
+			Number = Format();
 		}
 
-		public string ToString(char seperator = '-')
+		public string Format(char seperator = '-')
 		{
 			var randomNumbers = new int[10];
 			Random randy = new Random();
@@ -48,6 +48,11 @@ namespace RandomDataGenerator
 
 		}
 
+        public override string ToString()
+        {
+            return Number;
+        }
 
-	}
+
+    }
 }

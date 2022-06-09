@@ -126,7 +126,7 @@ static void RandomPhone()
     RandomDataGenerator.Phone p = new RandomDataGenerator.Phone();
     Console.WriteLine("Choose a delimiter.");
     choice = Console.ReadKey().KeyChar;
-    p.ToString(choice);
+    p.Format(choice);
 
     Console.WriteLine(p);
 }
